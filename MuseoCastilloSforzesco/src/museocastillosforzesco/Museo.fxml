@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="museocastillosforzesco.MuseoController">
+   <children>
+      <Pane layoutX="169.0" layoutY="82.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #283e51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="txt_Nombre" focusColor="#e1ccec" labelFloat="true" layoutX="196.0" layoutY="80.0" promptText="Nombre" styleClass="jfx-text-field" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmb_Tipo_Museo" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="196.0" layoutY="151.0" prefHeight="25.0" prefWidth="168.0" promptText="Tipo Museo" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+            <JFXListView fx:id="list_View" layoutX="459.0" layoutY="49.0" prefHeight="241.0" prefWidth="151.0" styleClass="jfx-list-view" stylesheets="@Style.css" />
+            <JFXButton fx:id="btn_Eliminar" graphicTextGap="10.0" layoutX="487.0" layoutY="315.0" onAction="#Eliminar" ripplerFill="#803939" styleClass="buttonEliminar" stylesheets="@Style.css" text="ELIMINAR" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="TRASH_ALT" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="cmb_Instalaciones" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="195.0" layoutY="220.0" prefHeight="25.0" prefWidth="168.0" promptText="Instalaciones" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+            <JFXButton fx:id="btn_AgregarForm" graphicTextGap="10.0" layoutX="232.0" layoutY="354.0" onAction="#OptionAgregar" ripplerFill="#803939" styleClass="buttonAgregar" stylesheets="@Style.css" text="AGREGAR" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS_SQUARE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <Label layoutX="256.0" layoutY="23.0" text="Museo" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="INSTITUTION" layoutX="157.0" layoutY="103.0" size="1.5em" />
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="LIST_ALT" layoutX="158.0" layoutY="175.0" size="1.5em" />
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="COG" layoutX="158.0" layoutY="244.0" size="1.5em" />
+            <FontAwesomeIcon fill="#6dff54" glyphName="PLUS_SQUARE" layoutX="380.0" layoutY="253.0" onMouseClicked="#Agregar" size="1.5em" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

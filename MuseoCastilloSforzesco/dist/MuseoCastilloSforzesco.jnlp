@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MuseoCastilloSforzesco.jnlp">
+  <information>
+    <title>MuseoCastilloSforzesco</title>
+    <vendor>Elias</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MuseoCastilloSforzesco.jar" size="191497" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\itextpdf-5.3.1.jar" size="1765191" download="eager" />
+    <jar href="lib\javase-2.2.jar" size="39692" download="eager" />
+    <jar href="lib\jfoenix-8.0.2.jar" size="2442326" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.18.jar" size="2330539" download="eager" />
+    <jar href="lib\qrgen-1.2.jar" size="5245" download="eager" />
+    <jar href="lib\zxing-core-2.0.jar" size="432773" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MuseoCastilloSforzesco" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="museocastillosforzesco.MuseoCastilloSforzesco"  name="MuseoCastilloSforzesco" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="museocastillosforzesco.ObraController">
+   <children>
+      <Pane layoutY="-7.0" prefHeight="548.0" prefWidth="855.0" style="-fx-background-color: #283e51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="txt_Nombre" focusColor="#e1ccec" labelFloat="true" layoutX="148.0" layoutY="99.0" promptText="Nombre" styleClass="jfx-text-field" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmb_Tipo_Obra" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="148.0" layoutY="154.0" prefHeight="25.0" prefWidth="168.0" promptText="Tipo Obra" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+            <JFXComboBox fx:id="cmb_Tipo_Cultura" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="148.0" layoutY="221.0" prefHeight="25.0" prefWidth="168.0" promptText="Tipo Cultura" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+            <JFXTextArea fx:id="txt_Detalle" focusColor="#e1ccec" labelFloat="true" layoutX="403.0" layoutY="365.0" prefHeight="110.0" prefWidth="327.0" promptText="Detalle" styleClass="textArea" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextArea>
+            <JFXRadioButton fx:id="rb_Anonimo" layoutX="403.0" layoutY="115.0" onAction="#SelectedAnonima" selected="true" text="Anonima" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Obras" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rb_Artista" layoutX="511.0" layoutY="115.0" onAction="#SelectedArtista" text="Artista" textFill="WHITE" toggleGroup="$Obras" />
+            <Pane fx:id="Pane_Artista" disable="true" layoutX="399.0" layoutY="216.0" prefHeight="53.0" prefWidth="198.0">
+               <children>
+                  <JFXComboBox fx:id="cmb_Artistas" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="23.0" layoutY="8.0" prefHeight="25.0" prefWidth="168.0" promptText="Artista" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+               </children>
+            </Pane>
+            <Label layoutX="139.0" layoutY="333.0" text="Codigo QR:" textFill="#2a7886">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="CodigoQR" fitHeight="124.0" fitWidth="143.0" layoutX="139.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Elias%20Segura%20ETR000003.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_Obra" fitHeight="124.0" fitWidth="143.0" layoutX="686.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Dropbox/BoxLevel.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="643.0" layoutY="111.0" text="Imagenes:" textFill="#2a7886">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#53a2ae" glyphName="CARET_SQUARE_ALT_RIGHT" layoutX="832.0" layoutY="241.0" onMouseClicked="#Siguiente" size="2.5em" />
+            <FontAwesomeIcon fill="#53a2ae" glyphName="CARET_SQUARE_ALT_LEFT" layoutX="643.0" layoutY="242.0" onMouseClicked="#Anterior" size="2.5em" text="" />
+            <FontAwesomeIcon fill="WHITE" glyphName="TRASH_ALT" layoutX="721.0" layoutY="322.0" onMouseClicked="#QuitarImagen" size="2em" />
+            <FontAwesomeIcon fill="#6dff54" glyphName="PLUS_SQUARE" layoutX="758.0" layoutY="323.0" onMouseClicked="#AgregarImagen" size="2em" text="" wrappingWidth="23.5714278370142" />
+            <Label layoutX="413.0" layoutY="24.0" text="Obra" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_AgregarForm" graphicTextGap="10.0" layoutX="386.0" layoutY="526.0" onAction="#OptionAgregar" ripplerFill="#803939" style="-fx-background-color: #18b0b0;" styleClass="buttonAgregar" stylesheets="@Style.css" text="AGREGAR" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS_SQUARE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <Label fx:id="lbl_Cantidad_Imagenes" layoutX="740.0" layoutY="146.0" text="0/0" textFill="WHITE" />
+            <JFXComboBox fx:id="cmb_Colecion" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="148.0" layoutY="283.0" prefHeight="25.0" prefWidth="168.0" promptText="Coleccion" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+            <Label layoutX="427.0" layoutY="144.0" text="Reconocida:" textFill="#2a7886">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="rb_Reconocida" layoutX="432.0" layoutY="176.0" text="Si" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Reconocida" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rb_No_Reconocida" layoutX="484.0" layoutY="177.0" selected="true" text="No" textFill="WHITE" toggleGroup="$Reconocida" />
+            <FontAwesomeIcon fill="#00fc4b" glyphName="DOWNLOAD" layoutX="190.0" layoutY="528.0" onMouseClicked="#DescargarQR" size="2em" />
+            <Label fx:id="txt_Limit" layoutX="690.0" layoutY="350.0" text="0/200" textFill="#2a7886" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

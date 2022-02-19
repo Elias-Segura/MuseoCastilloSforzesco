@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="67.0" prefWidth="557.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="museocastillosforzesco.ValoracionController">
+   <children>
+      <Pane layoutX="-22.0" layoutY="-65.0" prefHeight="135.0" prefWidth="619.0" style="-fx-background-color: #283e51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="star_1" layoutX="146.0" layoutY="21.0" onAction="#selectedbutton" prefHeight="17.0" prefWidth="14.0" textFill="RED">
+               <graphic>
+                  <FontAwesomeIcon fill="#e1ff00" glyphName="STAR_ALT" size="2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="star_2" layoutX="186.0" layoutY="21.0" onAction="#selectedbutton" prefHeight="17.0" prefWidth="14.0" textFill="RED">
+               <graphic>
+                  <FontAwesomeIcon fill="#e1ff00" glyphName="STAR_ALT" size="2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="star_3" layoutX="236.0" layoutY="21.0" onAction="#selectedbutton" prefHeight="17.0" prefWidth="14.0" textFill="RED">
+               <graphic>
+                  <FontAwesomeIcon fill="#e1ff00" glyphName="STAR_ALT" size="2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="star_4" layoutX="279.0" layoutY="21.0" onAction="#selectedbutton" prefHeight="17.0" prefWidth="14.0" textFill="RED">
+               <graphic>
+                  <FontAwesomeIcon fill="#e1ff00" glyphName="STAR_ALT" size="2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="star_5" layoutX="321.0" layoutY="21.0" onAction="#selectedbutton" prefHeight="17.0" prefWidth="14.0" textFill="RED">
+               <graphic>
+                  <FontAwesomeIcon fill="#e1ff00" glyphName="STAR_ALT" size="2em" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIcon fx:id="btn_Cerrar" fill="#1aff00" glyphName="ARROW_CIRCLE_UP" layoutX="505.0" layoutY="42.0" onMouseClicked="#CerrarValoracion" size="2em" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

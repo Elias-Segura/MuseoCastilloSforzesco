@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="museocastillosforzesco.PreciosController">
+   <children>
+      <Pane layoutX="35.0" layoutY="52.0" prefHeight="431.0" prefWidth="381.0" style="-fx-background-color: #283e51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="txt_PSemanal" focusColor="#e1ccec" labelFloat="true" layoutX="112.0" layoutY="109.0" promptText="Precio Semanal" styleClass="jfx-text-field" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt_PDomingo" focusColor="#e1ccec" labelFloat="true" layoutX="112.0" layoutY="162.0" promptText="Precio Domingo" styleClass="jfx-text-field" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmb_Museo" editable="true" focusColor="#e1ccec" labelFloat="true" layoutX="112.0" layoutY="216.0" prefHeight="25.0" prefWidth="168.0" promptText="Museo" styleClass="jfx-combo-box" stylesheets="@Style.css" unFocusColor="#2a7886" />
+            <Label layoutX="163.0" layoutY="37.0" text="Precio" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="CALENDAR_ALT" layoutX="79.0" layoutY="184.0" size="1.5em" />
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="CALENDAR" layoutX="79.0" layoutY="134.0" size="1.5em" />
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="INSTITUTION" layoutX="79.0" layoutY="244.0" size="1.5em" />
+            <JFXButton fx:id="btn_Form" graphicTextGap="10.0" layoutX="142.0" layoutY="325.0" onAction="#OptionAgregar" ripplerFill="#803939" style="-fx-background-color: #18b0b0;" styleClass="buttonAgregar" stylesheets="@Style.css" text="AGREGAR" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS_SQUARE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="museocastillosforzesco.ComisionesController">
+   <children>
+      <Pane layoutX="88.0" layoutY="-20.0" prefHeight="420.0" prefWidth="375.0" style="-fx-background-color: #283e51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="137.0" layoutY="26.0" text="Comision" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txt_Comision" focusColor="#e1ccec" labelFloat="true" layoutX="119.0" layoutY="209.0" promptText="Comision" styleClass="jfx-text-field" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btn_AgregarForm" graphicTextGap="10.0" layoutX="139.0" layoutY="308.0" onAction="#OptionAgregar" ripplerFill="#803939" style="-fx-background-color: #18b0b0;" styleClass="buttonAgregar" stylesheets="@Style.css" text="AGREGAR" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS_SQUARE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="CREDIT_CARD" layoutX="73.0" layoutY="172.0" size="1.5em" />
+            <FontAwesomeIcon fill="#2fc4b2" glyphName="MONEY" layoutX="73.0" layoutY="231.0" size="1.5em" />
+            <JFXTextField fx:id="txt_Tarjeta" focusColor="#e1ccec" labelFloat="true" layoutX="119.0" layoutY="150.0" promptText="Tarjeta" styleClass="jfx-text-field" stylesheets="@Style.css" unFocusColor="#2a7886">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
